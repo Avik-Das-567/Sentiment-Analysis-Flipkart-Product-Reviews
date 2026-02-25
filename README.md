@@ -6,15 +6,45 @@ An end-to-end **MLOps project** that performs sentiment analysis on real Flipkar
 
 ---
 
+## Project Structure
+
+```
+Sentiment_Analysis_Project/
+│
+├── data/
+│   └── data.csv
+│
+├── artifacts/
+│   ├── vectorizer.pkl
+│   ├── sentiment_model.pkl
+│   └── model_metadata.json
+│
+├── src/
+│   ├── config.py
+│   ├── data_loader.py
+│   ├── preprocessing.py
+│   ├── feature_engineering.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── model_registry.py
+│   └── inference.py
+│
+├── app.py
+├── run_training.py
+└── requirements.txt
+```
+
+---
+
 ## Project Overview
 
-**Objective**  
+**Objective:**  
 To analyze real-time Flipkart product reviews and:
 - Classify reviews into **Positive** or **Negative** sentiment
 - Understand common pain points from negative reviews
 - Deploy a scalable, production-ready ML system using MLOps best practices
 
-**Product Analyzed**  
+**Product Analyzed:**  
   *YONEX MAVIS 350 Nylon Shuttle* (Flipkart)
 
 ---
@@ -63,40 +93,6 @@ Multiple text representation techniques were explored:
 
 **Evaluation Metric**
 - F1-Score (chosen due to class imbalance)
-
----
-
-## Project Structure
-
-```
-Sentiment_Analysis_Project/
-│
-├── data/
-│   └── data.csv
-│
-├── artifacts/
-│   ├── vectorizer.pkl
-│   ├── sentiment_model.pkl
-│   └── model_metadata.json
-│
-├── src/
-│   ├── config.py
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   ├── feature_engineering.py
-│   ├── train.py
-│   ├── evaluate.py
-│   ├── model_registry.py
-│   └── inference.py
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── run_training.py
-```
-
----
-
 
 ---
 
